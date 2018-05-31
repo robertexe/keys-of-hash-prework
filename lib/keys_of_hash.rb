@@ -1,5 +1,12 @@
 class Hash
-  def keys_of(arguments)
-    # code goes here
+  def keys_of(*arguments)
+    output = []
+    arguments.collect do |animal|
+      animal.each do | key, value |
+        if value == animal
+          output << key
+        end
+    end
+    return output
   end
 end
