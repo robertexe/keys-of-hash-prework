@@ -1,7 +1,7 @@
 class Hash
   def keys_of(*arguments)
     output = []
-    arguments.collect do |animal|
+    arguments.each do |animal|
       animal.each do | key, value |
         if value == animal
           output << key
