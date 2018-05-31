@@ -2,7 +2,7 @@ class Hash
   def keys_of(*arguments)
     output = []
     arguments.each do |animal|
-      animal.each do | key, value |
+      each do | key, value |
         if value == animal
           output << key
         end
