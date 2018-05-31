@@ -6,6 +6,7 @@ class Hash
         if value == animal
           output << key
         end
+      end
     end
     return output
   end
